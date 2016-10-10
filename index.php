@@ -28,7 +28,7 @@
 	</tr>
 	<tr>
 	  <td>IP</td>
-	  <td><?php $_SERVER['SERVER_ADDR']; ?></td>
+	  <td><?php echo $_SERVER['SERVER_ADDR']; ?></td>
 	</tr>
 	<tr>
           <canvas width="80" height="80" data-jdenticon-hash="<?php echo gethostname(); ?>"></canvas> 
