@@ -11,6 +11,7 @@
 <title>Container Info</title>
 </head>
 <body>
+<?php die("testing if this works..."); ?>
 <div class="container">
 <div class="row">
 <div class="col s2">&nbsp;</div>
