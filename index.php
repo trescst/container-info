@@ -12,7 +12,7 @@
 </head>
 <body>
 <?php
-  error_log("ERROR: testing...", 0);
+  error_log("[ERROR]: testing...", 0);
   die();
 ?>
 <div class="container">
