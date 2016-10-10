@@ -31,7 +31,7 @@
 	  <td><?php echo $_SERVER['SERVER_ADDR']; ?></td>
 	</tr>
 	<tr>
-          <canvas width="80" height="80" data-jdenticon-hash="<?php echo gethostname(); ?>"></canvas> 
+          <canvas width="80" height="80" data-jdenticon-hash="<?php echo hash('sha256', gethostname();) ?>"></canvas> 
 	</tr>
   </tbody>
 </table>
