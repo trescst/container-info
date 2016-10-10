@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+<!-- jidenticon JS -->
+<script src="//cdn.jsdelivr.net/jdenticon/1.3.2/jdenticon.min.js" async></script>
+<title>v2.0 - AWS Container Info</title>
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="col s2">&nbsp;</div>
+<div class="col s8">
+<div class="card orange">
+<div class="card-content white-text">
+<div class="card-title">AWS Container Info (v2.0)</div>
+</div>
+<div class="card-content white">
+<table class="bordered">
+  <tbody>
+	<tr>
+	  <td>Hostname</td>
+	  <td><?php echo gethostname(); ?></td>
+	</tr>
+	<tr>
+	  <td>IP</td>
+	  <td><?php $_SERVER['SERVER_ADDR']; ?></td>
+	</tr>
+	<tr>
+          <canvas width="80" height="80" data-jdenticon-hash="<?php echo gethostname(); ?>"></canvas> 
+	</tr>
+  </tbody>
+</table>
+</div>
+</div>
+<div class="col s2">&nbsp;</div>
+</div>
+</div>
+</html>
