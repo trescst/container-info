@@ -1,3 +1,4 @@
+<?php ini_set('session.use_cookies', '0'); ?>
 <!doctype html>
 <html>
 <head>
