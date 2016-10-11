@@ -14,7 +14,7 @@
 <body>
 <?php
   error_log("[ERROR]: testing...", 0);
-  die();
+//  die();
 ?>
 <div class="container">
 <div class="row">
