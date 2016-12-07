@@ -59,7 +59,7 @@
           <td><?php echo $_SERVER['SERVER_ADDR']; ?></td>
         </tr>
         <tr>
-          <td>Cloud Provider</td>
+          <td>Organization</td>
           <td>
                 <?php
                         $url = "http://ipinfo.io/org";
