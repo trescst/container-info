@@ -56,7 +56,35 @@
 			// close curl resource, and free up system resources  
 			curl_close($ch);  
 		?>
-	</td>
+	  </td>
+        </tr>
+        <tr>
+          <td>Cloud Provider</td>
+          <td>
+                <?php
+                        $url = "http://ipinfo.io/country";
+                        $ch = curl_init();
+
+                        // set URL and other appropriate options
+                        curl_setopt($ch, CURLOPT_URL, $url);
+                        curl_setopt($ch, CURLOPT_HEADER, 0);
+                        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+                        // grab URL and pass it to the browser
+
+                        $org = curl_exec($ch);
+
+			if (strpos($org, 'Cronos') !== false) {
+			    echo "<img height='50px' src='images/org-cronos.png' />"; 
+			}
+                        else {
+			    echo "Unrecognized organization";
+                        }
+
+                        // close curl resource, and free up system resources
+                        curl_close($ch);
+                ?>
+          </td>
         </tr>
 	<tr>
           <canvas width="150" height="150" data-jdenticon-hash="<?php echo hash('sha256', gethostname()); ?>"></canvas> 
