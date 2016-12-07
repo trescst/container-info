@@ -55,6 +55,7 @@
 
 			// close curl resource, and free up system resources  
 			curl_close($ch);  
+		?>
 	</td>
         </tr>
 	<tr>
