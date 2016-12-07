@@ -78,7 +78,7 @@
 			    echo "<img height='50px' src='images/org-cronos.png' />"; 
 			}
                         else {
-			    echo "Unrecognized organization";
+			    echo $org;
                         }
 
                         // close curl resource, and free up system resources
