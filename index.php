@@ -80,6 +80,9 @@
 			else if (strpos($org, 'Amazon') !== false) {
 			    echo "<img height='50px' src='images/org-aws.png' />"; 
 			}
+			else if (strpos($org, 'Mobistar') !== false) {
+			    echo "<img height='50px' src='images/org-orange.png' />"; 
+			}
                         else {
 			    echo $org;
                         }
