@@ -51,7 +51,7 @@
 
 			$country_code = curl_exec($ch);  
 
-			echo "<img style='width: 50%; height: 50%' src='images/".$country_code.".png' />";
+			echo "<img src='images/".$country_code.".png' />";
 
 			// close curl resource, and free up system resources  
 			curl_close($ch);  
