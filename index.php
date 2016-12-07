@@ -27,14 +27,6 @@
 <div class="card-content white">
 <table class="bordered">
   <tbody>
-	<tr>
-	  <td>Hostname</td>
-	  <td><?php echo gethostname(); ?></td>
-	</tr>
-	<tr>
-	  <td>IP</td>
-	  <td><?php echo $_SERVER['SERVER_ADDR']; ?></td>
-	</tr>
         <tr>
           <td>Country</td>
           <td>
@@ -59,10 +51,18 @@
 	  </td>
         </tr>
         <tr>
+          <td>Hostname</td>
+          <td><?php echo gethostname(); ?></td>
+        </tr>
+        <tr>
+          <td>IP</td>
+          <td><?php echo $_SERVER['SERVER_ADDR']; ?></td>
+        </tr>
+        <tr>
           <td>Cloud Provider</td>
           <td>
                 <?php
-                        $url = "http://ipinfo.io/country";
+                        $url = "http://ipinfo.io/org";
                         $ch = curl_init();
 
                         // set URL and other appropriate options
