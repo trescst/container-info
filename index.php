@@ -20,7 +20,7 @@
 <div class="row">
 <div class="col s2">&nbsp;</div>
 <div class="col s8">
-<div class="card red">
+<div class="card yellow">
 <div class="card-content white-text">
 <div class="card-title">Container Info</div>
 </div>
