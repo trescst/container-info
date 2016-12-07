@@ -74,7 +74,7 @@
 
                         $org = curl_exec($ch);
 
-			if (strpos($org, 'Croonos') !== false) {
+			if (strpos($org, 'Cronos') !== false) {
 			    echo "<img height='50px' src='images/org-cronos.png' />"; 
 			}
 			else if (strpos($org, 'Amazon') !== false) {
