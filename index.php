@@ -13,7 +13,7 @@
 </head>
 <body>
 <?php
-  error_log("[ERROR]: testing...", 0);
+  error_log("[ERROR]: testing die() function...", 0);
 //  die();
 ?>
 <div class="container">
@@ -35,6 +35,28 @@
 	  <td>IP</td>
 	  <td><?php echo $_SERVER['SERVER_ADDR']; ?></td>
 	</tr>
+        <tr>
+          <td>Country</td>
+          <td>
+		<?php
+			$url = "http://ipinfo.io/country";  
+			$ch = curl_init();  
+
+			// set URL and other appropriate options  
+			curl_setopt($ch, CURLOPT_URL, $url);  
+			curl_setopt($ch, CURLOPT_HEADER, 0);  
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);  
+
+			// grab URL and pass it to the browser  
+
+			$country_code = curl_exec($ch);  
+
+			echo "<img src='images/".$country_code.".png'" />
+
+			// close curl resource, and free up system resources  
+			curl_close($ch);  
+	</td>
+        </tr>
 	<tr>
           <canvas width="150" height="150" data-jdenticon-hash="<?php echo hash('sha256', gethostname()); ?>"></canvas> 
 	</tr>
